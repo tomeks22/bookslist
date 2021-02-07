@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #d3b553, #d67358);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+form input, form button, form select {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button{
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3.s ease;
+}
+form button:hover{
+    background: #d88771;
+    color: white;
+}
+
+
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    background: rgb(255, 249, 244);
+    color: black;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+
+
+.dlt-btn{
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.book-item, .author-item{
+    padding: 0rem 10.5rem;
+}
+
+.fa-dlt{
+    pointer-events: none;
+}
+
+.sortable th {
+    cursor: pointer;
+  }
+  
+  .sortable .th-sort-asc::after {
+    content: "\25b4";
+  }
+  
+  .sortable .th-sort-desc::after {
+    content: "\25be";
+  }
+  
+  .sortable .th-sort-asc::after,
+  .sortable .th-sort-desc::after {
+    margin-left: 5px;
+  }
+  
+  .sortable .th-sort-asc,
+  .sortable .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+  }
