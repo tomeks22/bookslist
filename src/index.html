@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Books To Read</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Books To Read</h1>
+    </header>
+    <form>
+        <select class="category">
+            <option value="Crime story">Crime story</option>
+            <option value="Sci-fi">Sci-fi</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Poetry">Poetry</option>
+            <option value="Drama">Drama</option>
+            <option value="Science">Science</option>
+        </select>
+        <input type="text" class="book-input"/>
+        <input type="text" class="author-input"/>
+        <select class="priority">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button class="book-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form>
+    <div class="book-container">
+        
+            <table class="sortable">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Priority</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table">
+                    
+                     
+                  </tbody>
+            </table>
+        
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html> 
